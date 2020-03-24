@@ -39,6 +39,7 @@ public class SimplePropertyNamespaceHandlerWithExpressionLanguageTests {
 						getClass());
 		ITestBean foo = applicationContext.getBean("foo", ITestBean.class);
 		ITestBean bar = applicationContext.getBean("bar", ITestBean.class);
+		System.out.printf("1111111111111", foo);
 		assertEquals("Invalid name", "Baz", foo.getName());
 		assertEquals("Invalid name", "Baz", bar.getName());
 	}
